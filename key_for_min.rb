@@ -5,9 +5,7 @@ def key_for_min_value(name_hash)
   i = 0
   min_start = name_hash.first[1]
   min_array = []
-  if name_hash.length == {}
-    return nil
-  else while i < name_hash.length
+  if while i < name_hash.length
     name_hash.collect do |name,num|
       if num < min_start
         min_array << name
@@ -16,6 +14,8 @@ def key_for_min_value(name_hash)
       end
       i += 1
     end
-    end
+  end
+  else name_hash.length == {}
+        return nil
   end
 end
