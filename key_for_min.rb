@@ -8,7 +8,7 @@ def key_for_min_value(name_hash)
     num_start = name_hash.first[1]
     name_hash.each do |name, num|
       if num < num_start
-        num = num_start
+        num_start = num
       else
         num_start
       end
