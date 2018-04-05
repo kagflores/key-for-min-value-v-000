@@ -4,5 +4,13 @@ require 'pry'
 def key_for_min_value(name_hash)
   if name_hash == {}
     return nil
+  else
+    num_start = name_hash.first[1]
+    name_hash.each do |name, num|
+      if num < num_start
+        num = num_start
+        return num_start
+      else
+        num_start
   end
 end
