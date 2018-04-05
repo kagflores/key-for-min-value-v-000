@@ -11,7 +11,6 @@ def key_for_min_value(name_hash)
         num = num_start
       else
         num_start
-        binding.pry
       end
       return num_start
     end
