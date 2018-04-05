@@ -12,5 +12,7 @@ def key_for_min_value(name_hash)
         return num_start
       else
         num_start
+      end
+    end
   end
 end
