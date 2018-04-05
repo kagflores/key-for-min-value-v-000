@@ -9,11 +9,11 @@ def key_for_min_value(name_hash)
     name_hash.each do |name, num|
       if num < num_start
         num = num_start
-        return num_start
       else
         num_start
         binding.pry
       end
+      return num_start
     end
   end
 end
